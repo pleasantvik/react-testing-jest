@@ -47,6 +47,12 @@ describe("Application", () => {
     //? getByAltText
     const imgEl = screen.getByAltText("test");
     expect(imgEl).toBeInTheDocument();
+    //? getByTitle
+    const closeEl = screen.getByTitle("close");
+    expect(closeEl).toBeInTheDocument();
+    //? getByTitle
+    const customEl = screen.getByTestId("custom-element");
+    expect(customEl).toBeInTheDocument();
   });
 });
 

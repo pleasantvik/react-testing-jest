@@ -51,7 +51,7 @@
 
 - Role refers to the ARIA(Accessible Rich Internet Application) role which provides semnatic meaning to content to ensure people using assitive technologies are able to use them
 
-# HTML elemnts and theor role
+# HTML elemnts and their role
 
 - button : button
 - h1-h6 : heading
