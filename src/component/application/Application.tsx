@@ -16,14 +16,18 @@ const Application = () => {
       <div data-testid="custom-element">Custom HTML</div>
       <form>
         <div>
-          <label htmlFor="name">Name</label>
+          <label htmlFor="firstname">First Name</label>
           <input
             type="text"
-            id="name"
+            id="firstname"
             placeholder="fullname"
             value="Adedayo"
             onChange={() => {}}
           />
+        </div>
+        <div>
+          <label htmlFor="bio">Bio</label>
+          <textarea name="bio" id="bio"></textarea>
         </div>
         <div>
           <label htmlFor="job-location">Job Location</label>

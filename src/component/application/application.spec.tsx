@@ -3,10 +3,12 @@ import Application from "./Application";
 describe("Application", () => {
   test("renders correctly", () => {
     render(<Application />);
-    const inputEl = screen.getByRole("textbox");
+    const inputEl = screen.getByRole("textbox", {
+      name: "First Name",
+    });
     expect(inputEl).toBeInTheDocument();
     const inputEl2 = screen.getByRole("textbox", {
-      name: "Name",
+      name: "Bio",
     });
     expect(inputEl2).toBeInTheDocument();
     const selectEl = screen.getByRole("combobox");
@@ -23,8 +25,16 @@ describe("Application", () => {
     });
 
     expect(pageHeadign).toBeInTheDocument();
+    const sectionHeading = screen.getByRole("heading", {
+      // name: "Section 1",
+      level: 2,
+    });
 
-    const nameEl = screen.getByLabelText("Name");
+    expect(sectionHeading).toBeInTheDocument();
+
+    const nameEl = screen.getByLabelText("First Name", {
+      selector: "input",
+    });
     expect(nameEl).toBeInTheDocument();
 
     const termsEl = screen.getByLabelText(
