@@ -1,5 +1,6 @@
 import React from "react";
 import Application from "./component/application/Application";
+import Skill from "./component/skills/Skill";
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
         alignItems: "center",
       }}
     >
-      <Application />
+      {/* <Application /> */}
+      <Skill skills={["HTML", "CSS"]} />
     </div>
   );
 }
