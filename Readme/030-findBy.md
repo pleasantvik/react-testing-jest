@@ -30,6 +30,3 @@
  const view = render(<Skill skills={skills} />);
     logRoles(view.container);
 ```
-
-` const view = render(<Skill skills={skills} />);
-    logRoles(view.container);`
