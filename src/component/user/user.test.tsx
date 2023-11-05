@@ -10,10 +10,10 @@ describe("Users Fetched", () => {
     expect(headingEl).toBeInTheDocument();
   });
 
-  //   test("render users list", async () => {
-  //     render(<UsersPage />);
-  //     const users = await screen.findAllByRole("listitem");
+  test("render users list", async () => {
+    render(<UsersPage />);
+    const users = await screen.findAllByRole("listitem");
 
-  //     expect(users).toHaveLength(3);
-  //   });
+    expect(users).toHaveLength(10);
+  });
 });
