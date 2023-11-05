@@ -9,3 +9,5 @@
 or
       npx husky-init && npm yarn
 ```
+
+- With husky, developers cannot commit code with linting errors
