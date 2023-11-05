@@ -16,3 +16,10 @@ yarn add -D lint-staged
     "*.{ts,tsx}": ["eslint"]
 }
 ```
+
+- # pre-push
+- This ensure we are only able to push when all code pass
+
+```
+ npx husky add .husky/pre-push "npm test -- --watchAll=false"
+```

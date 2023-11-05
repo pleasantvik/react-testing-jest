@@ -2,7 +2,6 @@ import { screen, render } from "@testing-library/react"
 import user from "@testing-library/user-event"
 
 import Counter from "."
-import exp from "constants"
 
 describe("counter", () => {
   test("renders correctly", () => {
