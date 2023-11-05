@@ -12,9 +12,14 @@ yarn add -D lint-staged
 - Add lint-satged in packaged.json
 
 ```
-"lint-staged": {
-    "*.{ts,tsx}": ["eslint"]
-}
+ "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint"
+    ],
+    "*.{ts,tsx,css,scss}": [
+      "prettier --write"
+    ]
+  }
 ```
 
 - # pre-push

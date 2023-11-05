@@ -11,3 +11,10 @@ or
 ```
 
 - With husky, developers cannot commit code with linting errors
+
+- # pre-push
+- This ensure we are only able to push when all code pass
+
+```
+ npx husky add .husky/pre-push "npm test -- --watchAll=false"
+```
