@@ -1,19 +1,19 @@
-import { render, screen } from "@testing-library/react";
-import UsersPage from "./User";
+import { render, screen } from "@testing-library/react"
+import UsersPage from "./User"
 
 describe("Users Fetched", () => {
   test("user component render correctly", () => {
-    render(<UsersPage />);
+    render(<UsersPage />)
 
-    const headingEl = screen.getByRole("heading");
+    const headingEl = screen.getByRole("heading")
 
-    expect(headingEl).toBeInTheDocument();
-  });
+    expect(headingEl).toBeInTheDocument()
+  })
 
   test("render users list", async () => {
-    render(<UsersPage />);
-    const users = await screen.findAllByRole("listitem");
+    render(<UsersPage />)
+    const users = await screen.findAllByRole("listitem")
 
-    expect(users).toHaveLength(10);
-  });
-});
+    expect(users).toHaveLength(10)
+  })
+})

@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 
 const Application = () => {
   return (
@@ -48,7 +48,7 @@ const Application = () => {
         <button>Submit</button>
       </form>
     </div>
-  );
-};
+  )
+}
 
-export default Application;
+export default Application

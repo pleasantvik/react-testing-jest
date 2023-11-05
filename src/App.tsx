@@ -1,9 +1,9 @@
-import React from "react";
-import Application from "./component/application/Application";
-import Skill from "./component/skills/Skill";
-import Counter from "./component/counter";
-import MuiMode from "./component/muiMode/MuiMode";
-import AppProvider from "./component/provider/AppProvider";
+import React from "react"
+import Application from "./component/application/Application"
+import Skill from "./component/skills/Skill"
+import Counter from "./component/counter"
+import MuiMode from "./component/muiMode/MuiMode"
+import AppProvider from "./component/provider/AppProvider"
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         <Skill skills={["HTML", "CSS"]} />
       </div>
     </AppProvider>
-  );
+  )
 }
 
-export default App;
+export default App

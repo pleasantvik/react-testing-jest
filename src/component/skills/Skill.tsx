@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from "react";
-import { SkillProps } from "./skills.types";
+import React, { useEffect, useState } from "react"
+import { SkillProps } from "./skills.types"
 
 const Skill = (props: SkillProps) => {
-  const { skills } = props;
-  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
+  const { skills } = props
+  const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false)
   useEffect(() => {
-    setTimeout(() => setIsLoggedIn(true), 500);
-  }, []);
+    setTimeout(() => setIsLoggedIn(true), 500)
+  }, [])
   return (
     <>
       <ul>
@@ -36,7 +36,7 @@ const Skill = (props: SkillProps) => {
         </button>
       )}
     </>
-  );
-};
+  )
+}
 
-export default Skill;
+export default Skill

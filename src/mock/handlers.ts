@@ -15,7 +15,7 @@
 //   ),
 // ];
 
-import { http, HttpResponse } from "msw";
+import { http, HttpResponse } from "msw"
 
 // Let's keep a map of all existing posts in memory.
 // At the beginning, this list is empty as we have no posts.
@@ -29,8 +29,8 @@ export const handlers = [
       { name: "Bruce Wayne" },
       { name: "Clark Kent" },
       { name: "Princess Dianan" },
-    ]);
+    ])
   }),
 
   // ...the other request handlers.
-];
+]
